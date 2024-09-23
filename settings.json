@@ -1,0 +1,13 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\Users\\Cristian\\Downloads\\javafx-sdk-23\\lib\\javafx.base.jar",
+        "d:\\Users\\Cristian\\Downloads\\javafx-sdk-23\\lib\\javafx.controls.jar",
+        "d:\\Users\\Cristian\\Downloads\\javafx-sdk-23\\lib\\javafx.fxml.jar",
+        "d:\\Users\\Cristian\\Downloads\\javafx-sdk-23\\lib\\javafx.graphics.jar",
+        "d:\\Users\\Cristian\\Downloads\\javafx-sdk-23\\lib\\javafx.media.jar",
+        "d:\\Users\\Cristian\\Downloads\\javafx-sdk-23\\lib\\javafx.swing.jar",
+        "d:\\Users\\Cristian\\Downloads\\javafx-sdk-23\\lib\\javafx.web.jar",
+        "d:\\Users\\Cristian\\Downloads\\javafx-sdk-23\\lib\\javafx-swt.jar"
+    ]
+}
