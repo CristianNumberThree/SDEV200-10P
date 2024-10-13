@@ -4,6 +4,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.geometry.Pos;
 import java.util.List;
+import javafx.stage.Modality;
 
 public class UIManager {
 
@@ -92,9 +93,11 @@ public class UIManager {
         statusWindow.show();
     }
 
-    public static void showErrorMessage(String message, String imageFile) {
+    private static void showErrorMessage(String message) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.initModality(Modality.APPLICATION_MODAL); // Prevent interaction with other windows
+        alert.setTitle("Error");
         alert.setContentText(message);
-        alert.showAndWait();
+        alert.showAndWait(); // Block until the alert is closed
     }
 }
