@@ -59,11 +59,20 @@ public class GameController {
     private void handleEatenItems() {
         long trashCount = eaten.stream().filter(item -> item.equals("Trash")).count();
         long rottenFoodCount = eaten.stream().filter(item -> item.equals("Rotten Food")).count();
+        long goldenEggCount = eaten.stream().filter(item -> item.equals("Golden Egg")).count();
+        long freshFoodCount = eaten.stream().filter(item -> item.equals("Fresh Food")).count();
+        long strangeMeatCount = eaten.stream().filter(item -> item.equals("Strange Meat")).count();
 
         if (trashCount >= 2) {
-            UIManager.showErrorMessage("Hello friend I am the trash man", "trashman.gif");
+            showErrorMessage("Hello friend I am the trash man");
         } else if (rottenFoodCount >= 2) {
-            UIManager.showErrorMessage("Run its the appetizer", "appetizer.gif");
+            showErrorMessage("Run its the appetizer");
+        } else if (goldenEggCount >= 2) {
+            openLink("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        } else if (freshFoodCount >= 2) {
+            showErrorMessage("So full so demure");
+        } else if (strangeMeatCount >= 2) {
+            showErrorMessage("iM hErE FoR YoU");
         }
         System.exit(0);
     }
