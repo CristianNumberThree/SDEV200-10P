@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Random;
 import static javafx.application.Application.launch;
 
-public class MyFriendTextBasedRPGSinlge extends Application {
+public class MyFriendTextBasedRPGSingle extends Application {
 
     // List to store selected items
     private List<String> food = new ArrayList<>();
